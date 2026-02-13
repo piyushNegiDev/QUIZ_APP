@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <div class="selections">
+        <h2>Before You Start</h2>
+        <h1>Configure Your Quiz</h1>
+        <p>
+          Select a category, difficulty, number of questions (0 to 20), and
+          optional tags.
+        </p>
+
+        <div class="select-Items">
+          <div class="label-input">
+            <label for="category">Category</label>
+            <select name="" id="category">
+              <option value=""></option>
+            </select>
+          </div>
+
+          <div class="label-input">
+            <label for="difficulty">Difficulty</label>
+            <select name="" id="difficulty">
+              <option value="">Any</option>
+              <option value="">Easy</option>
+              <option value="">Medium</option>
+              <option value="">Hard</option>
+            </select>
+          </div>
+
+          <div class="label-input">
+            <label for="questionsRange">Number Of Questions</label>
+            <div class="range-total">
+              <input id="questionsRange" type="range" min="0" max="20" />
+              <div class="number-of-questions">10</div>
+            </div>
+          </div>
+
+          <div class="label-input">
+            <label for="tags">TAGS</label>
+            <input type="text" placeholder="e.g. javascript, linux" id="tags" />
+          </div>
+        </div>
+
+        <button class="btn">Render Quiz</button>
+      </div>
+    </div>
+
+    <div class="container"></div>
+  </body>
+</html>
