@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  border-radius: 1rem;
+  border: 1px solid var(--line);
+
+  background-color: var(--card);
+
+  max-width: 600px;
+  width: 100%;
+
+  /* height: 100%; */
+  /* max-height: 656.75px; */
+}
+
+/* @media screen and (max-widht: 638px) {
+  .container {
+    min-width: 100%;
+  }
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 365px) {
+  .header {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+}
+
+/* .headerFirst{
+    
+} */
+
+.headerSecond {
+  border: 1px solid rgb(201, 236, 232);
+  border-radius: 4rem;
+
+  background-color: #effaf9;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.challengeMode {
+  color: var(--brand-dark);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.technicalQuiz {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.stats .progressBar {
+  width: 100%;
+  height: 30px;
+
+  border-radius: 1rem;
+
+  background: #fd1d1d;
+  background: linear-gradient(
+    90deg,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.progressPercentage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat .score,
+.stat .timeLeft {
+  text-align: center;
+
+  padding: 0.7rem;
+
+  background-color: #effaf9;
+
+  width: 49%;
+
+  border-radius: 1rem;
+  border: 1px solid rgb(201, 236, 232);
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.questionContainer .question {
+  font-weight: bold;
+}
+
+.questionContainer button {
+  padding: 0.7rem 1rem;
+
+  word-break: break-all;
+
+  border-radius: 1rem;
+  border: 1px solid black;
+
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btnDiv {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.btnDiv button {
+  padding: 0.7rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}

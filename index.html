@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="containerSytle.css" />
   </head>
   <body>
-    <div class="shell">
+    <!-- <div class="shell">
       <div class="selections">
         <h2>Before You Start</h2>
         <h1>Configure Your Quiz</h1>
@@ -20,7 +21,26 @@
           <div class="label-input">
             <label for="category">Category</label>
             <select name="" id="category">
-              <option value=""></option>
+              <option value="">Any Category</option>
+              <option value="linux">Linux</option>
+              <option value="bash">Bash</option>
+              <option value="uncategorized">Uncategorized</option>
+              <option value="docker">Docker</option>
+              <option value="sql">SQL</option>
+              <option value="cms">CMS</option>
+              <option value="code">Code</option>
+              <option value="devops">DevOps</option>
+              <option value="react">React</option>
+              <option value="laravel">Laravel</option>
+              <option value="postgres">Postgres</option>
+              <option value="django">Django</option>
+              <option value="cpanel">CPanel</option>
+              <option value="nodejs">Nodejs</option>
+              <option value="wordpress">WordPress</option>
+              <option value="next-js">Nextjs</option>
+              <option value="vauejs">VueJS</option>
+              <option value="apache-kafka">Apache kafka</option>
+              <option value="html">HTML</option>
             </select>
           </div>
 
@@ -28,9 +48,9 @@
             <label for="difficulty">Difficulty</label>
             <select name="" id="difficulty">
               <option value="">Any</option>
-              <option value="">Easy</option>
-              <option value="">Medium</option>
-              <option value="">Hard</option>
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
             </select>
           </div>
 
@@ -41,17 +61,86 @@
               <div class="number-of-questions">10</div>
             </div>
           </div>
-
-          <div class="label-input">
-            <label for="tags">TAGS</label>
-            <input type="text" placeholder="e.g. javascript, linux" id="tags" />
-          </div>
         </div>
 
-        <button class="btn">Render Quiz</button>
+        <button id="renderQuizBtn" class="btn">Render Quiz</button>
+      </div>
+    </div> -->
+    <div class="container" id="container">
+      <div class="header">
+        <div class="headerFirst">
+          <p class="challengeMode">Challenge Mode</p>
+          <p class="technicalQuiz">Technical Quiz</p>
+        </div>
+        <div class="headerSecond">
+          <p>Questions</p>
+          <p>${i + 1}/${data.length}</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="progressPercentage">
+          <p>Progress</p>
+          <p>40%</p>
+        </div>
+
+        <div class="progressBar"></div>
+
+        <div class="stat">
+          <div class="score">
+            <p>SCORE</p>
+            <p id="score">0</p>
+          </div>
+          <div class="timeLeft">
+            <p>TIME LEFT</p>
+            <p>0s</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="questionContainer">
+        <p>QUESTION 4</p>
+
+        <!-- <p>${data[i].question}</p> -->
+        <p class="question">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+          blanditiis, accusamus quae voluptatem dolor eum ducimus fuga facere
+          obcaecati officia.
+        </p>
+
+        <button
+          id="aBtn"
+          data-correct="${data[i].correct_answers.answer_a_correct}"
+        >
+          A. ${data[i].answers.answer_a}
+        </button>
+        <button
+          id="bBtn"
+          data-correct="${data[i].correct_answers.answer_b_correct}"
+        >
+          B. ${data[i].answers.answer_b}
+        </button>
+        <button
+          id="cBtn"
+          data-correct="${data[i].correct_answers.answer_c_correct}"
+        >
+          C. ${data[i].answers.answer_c}
+        </button>
+        <button
+          id="dBtn"
+          data-correct="${data[i].correct_answers.answer_d_correct}"
+        >
+          D. ${data[i].answers.answer_d}
+        </button>
+        <p>No answer selected for this question.</p>
+      </div>
+
+      <div class="btnDiv">
+        <button>Previous</button>
+        <button>Next</button>
       </div>
     </div>
 
-    <div class="container"></div>
+    <script src="script.js"></script>
   </body>
 </html>
