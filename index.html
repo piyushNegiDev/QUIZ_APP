@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="containerSytle.css" />
   </head>
   <body>
-    <!-- <div class="shell">
+    <div class="shell">
       <div class="selections">
         <h2>Before You Start</h2>
         <h1>Configure Your Quiz</h1>
@@ -64,80 +64,6 @@
         </div>
 
         <button id="renderQuizBtn" class="btn">Render Quiz</button>
-      </div>
-    </div> -->
-    <div class="container" id="container">
-      <div class="header">
-        <div class="headerFirst">
-          <p class="challengeMode">Challenge Mode</p>
-          <p class="technicalQuiz">Technical Quiz</p>
-        </div>
-        <div class="headerSecond">
-          <p>Questions</p>
-          <p>${i + 1}/${data.length}</p>
-        </div>
-      </div>
-
-      <div class="stats">
-        <div class="progressPercentage">
-          <p>Progress</p>
-          <p>40%</p>
-        </div>
-
-        <div class="progressBar"></div>
-
-        <div class="stat">
-          <div class="score">
-            <p>SCORE</p>
-            <p id="score">0</p>
-          </div>
-          <div class="timeLeft">
-            <p>TIME LEFT</p>
-            <p>0s</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="questionContainer">
-        <p>QUESTION 4</p>
-
-        <!-- <p>${data[i].question}</p> -->
-        <p class="question">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          blanditiis, accusamus quae voluptatem dolor eum ducimus fuga facere
-          obcaecati officia.
-        </p>
-
-        <button
-          id="aBtn"
-          data-correct="${data[i].correct_answers.answer_a_correct}"
-        >
-          A. ${data[i].answers.answer_a}
-        </button>
-        <button
-          id="bBtn"
-          data-correct="${data[i].correct_answers.answer_b_correct}"
-        >
-          B. ${data[i].answers.answer_b}
-        </button>
-        <button
-          id="cBtn"
-          data-correct="${data[i].correct_answers.answer_c_correct}"
-        >
-          C. ${data[i].answers.answer_c}
-        </button>
-        <button
-          id="dBtn"
-          data-correct="${data[i].correct_answers.answer_d_correct}"
-        >
-          D. ${data[i].answers.answer_d}
-        </button>
-        <p>No answer selected for this question.</p>
-      </div>
-
-      <div class="btnDiv">
-        <button>Previous</button>
-        <button>Next</button>
       </div>
     </div>
 
